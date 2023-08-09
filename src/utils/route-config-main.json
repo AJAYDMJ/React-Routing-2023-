@@ -1,0 +1,8 @@
+{
+    "/Settings": {
+        "roles" : ["admin"]
+    },
+    "/Usage/Details/:userId/remarks": {
+        "roles": ["admin"]
+    }
+}

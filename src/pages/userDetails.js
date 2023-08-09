@@ -1,7 +1,8 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { NavLink, Outlet, useLocation, useNavigate, useParams } from 'react-router-dom';
+import {  Outlet, useLocation, useNavigate, useParams } from 'react-router-dom';
 import './css/details.css';
+import PrivateLink from '../components/links/privateLink';
 
 const UserDetails = () => {
     // Data from the route  from the prev component
@@ -52,9 +53,9 @@ const UserDetails = () => {
 
             <div className="sub-menu"> 
                 {/* end is given because else this marks gets highlighted always */}
-                <NavLink to="" end><span>Marks </span></NavLink>
-                <NavLink to="sports"><span>Sports </span></NavLink>
-                <NavLink to="remarks"><span>Remarks </span></NavLink>
+                <PrivateLink to="" end><span>Marks </span></PrivateLink>
+                <PrivateLink to="sports"><span>Sports </span></PrivateLink>
+                <PrivateLink to="remarks"><span>Remarks </span></PrivateLink>
             </div>
             <div className='details-body'>
                 <Outlet context={user}/>

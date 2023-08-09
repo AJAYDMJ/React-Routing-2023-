@@ -10,6 +10,51 @@ body {
   padding: 10px;
 }
 
+
+
+body {
+  margin: 0;
+  background: rgb(174, 174, 174);
+}
+
+.page {
+  margin: 5px 40px;
+  background: white;
+  min-height: 400px;
+  padding: 10px;
+}
+.login {
+  display: flex;
+  justify-content: center;
+}
+
+.login .error{
+  color: red;
+}
+
+.login > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login > div > input, button{
+  margin: 5px;
+  padding: 5px;
+  
+}
+
+.login-button {
+  width: 100%;
+}
+
 a {
   font-size: 10px;
+}
+.logout {
+  flex-grow: 1;
+}
+a.logout span{
+  display: flex;
+  flex-direction: row-reverse;
 }
